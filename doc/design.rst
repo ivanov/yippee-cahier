@@ -7,7 +7,7 @@ particularly with sphinx.
 
 This allows us to use - say - vim - for editing text and code.
 
-The IPython notebook is pleasantly interactive in showing us rendering of LaTex,
+The IPython notebook is pleasantly interactive in showing us rendering of LaTeX,
 and output of code execution, but the web interface feels heavy and
 uncomfortable when writing anything longer than a few pages.
 
@@ -42,8 +42,8 @@ This is *edit left, look right*.
 
 We stored the results that are the basis for the display on the right, as an
 IPython notebook, in notebook JSON format.  We use this notebook as store for
-the results, and we will fetch the results from this store when creating the
-built version of the RST page.
+the results, and we will fetch the assets (outputs) from this store when
+creating the built version of the RST page.
 
 We will call the stored JSON notebook ``scratch.ipynb``, although its actual
 name will probably be some version of the input RST document.
@@ -57,7 +57,7 @@ This can either be:
 * (No text selected) all text above and below the cursor up to (down to) any
   directive apart from a ``..math`` directive, or a heading.
 
-We convert this text according to markdown according to the following rules:
+We convert this text to markdown according to the following rules:
 
 * We discard any directives or inline text roles that are not ``..math::`` or
   ``:math:``;
