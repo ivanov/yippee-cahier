@@ -11,6 +11,14 @@ The IPython notebook is pleasantly interactive in showing us rendering of LaTeX,
 and output of code execution, but the web interface feels heavy and
 uncomfortable when writing anything longer than a few pages.
 
+*******************************
+What's wrong with the notebook?
+*******************************
+
+Using model–view–controller (MVC) terminology, the Jupyter notebook interface
+welds a **view** to the **model**. Yippee-cahier further decouples portions of
+the notebook, allowing for partial selective views of the model.
+
 *********
 Use-cases
 *********
@@ -25,7 +33,7 @@ Use-cases
   rendered in the web browser.  This allows me to review LaTeX rendered with
   MathJax or similar;
 * As I edit, I may want to keep a selection of rendered results current in the
-  web browswer to remind me what the rendered output will look like;
+  web browser to remind me what the rendered output will look like;
 * I will often want to check the results of the code in the RST file still hold
   after my edits.  I can run some command from vim to rerun all the code
   snippets in the vim buffer in a fresh execution environment and replace the
