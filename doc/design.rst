@@ -15,9 +15,11 @@ uncomfortable when writing anything longer than a few pages.
 What's wrong with the notebook?
 *******************************
 
-Using model–view–controller (MVC) terminology, the Jupyter notebook interface
-welds a **view** to the **model**. Yippee-cahier further decouples portions of
-the notebook, allowing for partial selective views of the model.
+Using model–view–controller (MVC) terminology, the Jupyter notebook welds a
+**view** to the **model**. The interface (the view) is a facsimile of the `.ipynb`
+document (the model). Changes from user input apply to both the view and the
+model in lockstep.  Yippee-cahier relaxes this coupling, allowing, for
+example, partial selective views of the model.
 
 *********
 Use-cases
