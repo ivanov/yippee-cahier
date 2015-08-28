@@ -121,3 +121,6 @@ On running some vim function such as ``:ExecICode``, vim does the following:
 * From vim, I can ``:RestartNBKernel`` to restart the IPython notebook kernel
   and ``:RunAllAbove`` to run all code cells above the cursor, replacing the
   corresponding cells in ``scratch.ipynb`` and refreshing rendering.
+
+Storage of artifacts happens in a `sidecar file
+<https://en.wikipedia.org/wiki/Sidecar_file>`_
